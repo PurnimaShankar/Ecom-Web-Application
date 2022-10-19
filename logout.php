@@ -1,0 +1,12 @@
+<?php
+ session_start();
+if(isset($_SESSION['email']))
+{
+	session_destroy();
+	header("location:login-register.php");
+}
+else
+{
+	header("location:login-register.php");
+}
+?>
